@@ -52,11 +52,11 @@ cp "/path/to/your/cookies.sqlite" ./cookies.sqlite
 USERNAME = "your_instagram_username"
 ```
 
----
+ 
 
-## ▶️ Usage
+##  Usage
 
-> ⚠️ **Close your browser before running the script** — otherwise cookies.sqlite will be locked.
+> **Close your browser before running the script** — otherwise cookies.sqlite will be locked.
 
 ```bash
 python3 download_saved.py
@@ -64,9 +64,9 @@ python3 download_saved.py
 
 Posts will be saved in the `:saved/` folder.
 
----
+ 
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 instagram-saved-downloader/
@@ -77,17 +77,16 @@ instagram-saved-downloader/
 └── :saved/             # downloaded posts go here (gitignored)
 ```
 
----
-
-## ⚠️ Notes
+ 
+## Notes
 
 - Instagram has rate limits — the script automatically retries on errors (don't panic if you see 403 warnings)
 - There is a 4 second delay between each download to avoid getting blocked
 - `cookies.sqlite` and `:saved/` are in `.gitignore` — your data won't be pushed to GitHub
 
----
-
-## 🛠️ Built With
+ 
+ 
+## Built With
 
 - [Instaloader](https://instaloader.github.io/)
 - [browser-cookie3](https://github.com/borisbabic/browser_cookie3)
